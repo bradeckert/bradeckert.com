@@ -18,6 +18,10 @@
   height: 1070px;
 }
 
+.social-icon {
+	color: #999;
+}
+
 body { 
   padding-top: 70px;
 }
@@ -39,10 +43,4 @@ html {
 
 .container {
   background-color: #d2d0c4;
-}
-
-#backgroud-image {
-position-x: initial;
-postion-y: initial;
-
 }
