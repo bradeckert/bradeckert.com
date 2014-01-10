@@ -23,5 +23,20 @@
 
 body { 
   padding-top: 70px;
-  background-image: '../data/santa.gif'; 
+  background: url("../data/santa.jpg");
+	background-image: url(http://bradeckert.com/data/santa.jpg);
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: auto;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: #d2d0c4;
+	background-color: #d2d0c4;
+	background-repeat: no-repeat;
+	background-size: auto;
+	position: relative;
+	box-shadow: 0 2px 5px #888888;
 }
