@@ -20,7 +20,10 @@
 
 .social-icon {
 	color: #999;
-	margin-right: 10px;
+}
+
+.far-right-social {
+  margin-right: 20px;
 }
 
 body { 
@@ -44,4 +47,9 @@ html {
 
 .container {
   background-color: #d2d0c4;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: white;
 }
