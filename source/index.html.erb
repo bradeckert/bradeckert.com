@@ -1,10 +1,86 @@
----
-title: Welcome to Middleman
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brad Eckert's Personal Website</title>
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<body>
+  <script type="text/x-handlebars">
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-padding" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brad Eckert</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
+          <li>{{#link-to 'resume'}}Resume{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        </ul>
+      </div>
+    </nav>
+      
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" id="about">
+    <div class='container'>
+      <p>Yehuda Katz is a member of the <a href="http://emberjs.com">Ember.js</a>, <a href="http://rubyonrails.org">Ruby on Rails</a>
+      and <a href="http://www.jquery.com">jQuery</a> Core Teams; he spends his daytime hours at the startup he founded,
+      <a href="http://www.tilde.io">Tilde Inc.</a>.</p>
+      <p>Yehuda is co-author of best-selling <a href="http://affiliate.manning.com/idevaffiliate.php?id=485_176">jQuery in Action</a> and
+      <a href="http://affiliate.manning.com/idevaffiliate.php?id=485_145">Rails 3 in Action</a>.</p>
+      <p>He spends most of his time hacking on open source—his main projects, along with others, like <a href="https://github.com/wycats/thor">Thor</a>,
+      <a href="http://www.handlebarsjs.com">Handlebars</a> and <a href="https://github.com/carlhuda/janus">Janus</a>—or traveling the world doing evangelism work.</p>
+      <p>He can be found on Twitter as <a href="http://www.twitter.com/wycats">@wycats</a>.</p>
+    </div>
+
+    <div class='container'>
+      <p>My name is Tom Dale. I helped create <a href="http://www.emberjs.com/">Ember.js</a>, a JavaScript framework that brings sanity to the web.</p>
+
+      <p>In October of 2011, I co-founded <a href="http://www.tilde.io">Tilde</a> with Yehuda Katz, Leah Silber and Carl Lerche.</p>
+
+      <p>In my spare time I run a cash-for-beer exchange program at many local San Francisco dive bars.</p>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" id="resume">
+    <object data="data/resume.pdf" type="application/pdf" class="container resume">
+      <embed src="data/resume.pdf" type="application/pdf" />
+    </object>
+  </script>
+
+  <script type="text/x-handlebars" id="contact">
+    <address class="container">
+      <strong>Brad Eckert</strong><br>
+      <a href="mailto:beckert@mit.edu?Subject=Personal%20Website" target="_top">beckert@mit.edu</a><br>
+      <abbr title="Phone">P:</abbr> (650) 575-9634
+    </address>
+
+  </script>
+
+  <script src="javascripts/libs/jquery-1.10.2.js"></script>
+  <script src="javascripts/libs/handlebars-1.1.2.js"></script>
+  <script src="javascripts/libs/ember-1.2.0.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascripts/all.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>
