@@ -65,8 +65,8 @@ body {
 
 
 html {
-  background: url("../data/santa.jpg");
-	background-image: url("../data/santa.gif");
+  background: url("../data/santa.png");
+	background-image: url("../data/santa.png");
 	background-position: left bottom;
 	background-size: contain;
 	background-repeat-x: no-repeat;
