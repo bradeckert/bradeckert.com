@@ -1,21 +1,35 @@
 /* Put your CSS here */
 .ember-application {
     margin: 20px;
-    background-color: #666666;
+    background-color: transparent;
+    position: right middle;
+
 }
 
 .active {
   font-weight: bold;
 }
 
-.nav-link {
-  color: #eeeeee;
-  font-size: 120%;
+div .navbar-inverse .navbar-brand {
+color: #eeeeee;
+}
+div .navbar-inverse .navbar-brand:hover,
+div .navbar-inverse .navbar-brand:focus {
+color: #3399cc;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #3399cc;
+div .navbar-inverse .navbar-nav>li>a {
+  color:#eeeeee;
+}
+
+div .navbar-inverse .navbar-nav>li>a:hover,
+div .navbar-inverse .navbar-nav>li>a:focus {
+  color:#3399cc;
+  background-color:transparent;
+}
+
+.navbar-nav>li>a {
+  padding-top: 15px !important;
 }
 
 .navbar-header {
