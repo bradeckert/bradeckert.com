@@ -1,11 +1,38 @@
 /* Put your CSS here */
 .ember-application {
     margin: 20px;
-    background-color: #d2d0c4
+    background-color: #666666;
 }
 
 .active {
   font-weight: bold;
+}
+
+.nav-link {
+  color: #eeeeee;
+  font-size: 120%;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #3399cc;
+}
+
+.navbar-header {
+  color: #eeeeee;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #3399cc;
+}
+
+.social-icon {
+  color: #eeeeee;
+}
+
+.container {
+  background-color: transparent;
 }
 
 .about {
@@ -18,14 +45,6 @@
   height: 1070px;
 }
 
-.social-icon {
-	color: #999;
-}
-
-.far-right-social {
-  margin-right: 20px;
-}
-
 body { 
   padding-top: 70px;
 }
@@ -33,7 +52,7 @@ body {
 
 html {
   background: url("../data/santa.jpg");
-	background-image: url("../data/santa.jpg");
+	background-image: url("../data/santa.gif");
 	background-position: left bottom;
 	background-size: contain;
 	background-repeat-x: no-repeat;
@@ -41,15 +60,6 @@ html {
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
-	background-color: #d2d0c4;
+	background-color: #666666;
 	background-repeat: no-repeat;
-}
-
-.container {
-  background-color: #d2d0c4;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  color: white;
 }
