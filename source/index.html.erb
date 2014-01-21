@@ -39,27 +39,26 @@
         </ul>
       </div>
     </nav>
-      
-    {{outlet}}
+    <div class='container'>
+      {{outlet}}
+    </div>
   </script>
 
   <script type="text/x-handlebars" id="about">
-    <div class='container'>
+    <div class="about content-text">
       <p>Welcome to my site!</p>
       <p>I am a junior at MIT currently studying <a href="mit compsci site">computer science</a> with a concentration in economics. I am currently working on building my frontend development skills while working at Nest Labs in Palo Alto, California.</p>
-      <p>In my spare time (when MIT allows me that pleasure...) I like to ski, cook, enjoy the closest beer, and read or watch George R.R. Martin reduce the cast of characters.</p>
-      <p>This webcase will be a showcase of my skills, what projects I have worked on, and anything else I find amusing enough to share. Feel free to contact me to learn more!</p>
+      <p>In my spare time (when MIT allows me that pleasure...) I like to ski, cook, enjoy the closest beer, and read or watch George R.R. Martin reduce his cast of characters.</p>
+      <p>This website will be a showcase of my skills, what projects I have worked on, and anything else I find amusing enough to share. Feel free to contact me to learn more!</p>
     </div>
   </script>
 
   <script type="text/x-handlebars" id="resume">
-    <object data="data/resume.pdf" type="application/pdf" class="container resume right-align">
-      <embed src="data/resume.pdf" type="application/pdf" />
-    </object>
+    <img src="data/resume.jpg" />
   </script>
 
   <script type="text/x-handlebars" id="contact">
-    <address class="container">
+    <address>
       <strong>Brad Eckert</strong><br>
       <a href="mailto:beckert@mit.edu?Subject=Personal%20Website" target="_top">beckert@mit.edu</a><br>
       <abbr title="Phone">P:</abbr> (650) 575-9634

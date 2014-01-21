@@ -45,24 +45,59 @@ div .navbar-inverse .navbar-nav>li>a:focus {
   color: #eeeeee;
 }
 
-.container {
-  background-color: transparent;
+div.container {
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:5%%;
+  margin-left:45%;
+}
+div.container:before,
+div.container:after {
+  display:table;
+  content:" ";
+}
+div.container:after {
+  clear:both;
+}
+div.container:before,
+div.container:after {
+  display:table;
+  content:" ";
+}
+div.container:after {
+  clear:both;
+}
+@media(min-width:768px) {
+  div.container{width:375px}
+}
+@media(min-width:992px) {
+  div.container{width:485px}
+}
+@media(min-width:1200px) {
+  div.container{width:585px}
 }
 
-.about {
-  position: relative;
-  margin: 0 auto;
-  width: 65%;
+div.content-text {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.428571429;
+  color: #eeeeee;
 }
 
-.resume {
-  height: 1070px;
+.content-text a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.content-text a:hover,
+.content-text a:focus {
+  text-decoration: none;
+  color: #3399cc;
 }
 
 body { 
   padding-top: 70px;
 }
-
 
 html {
   background: url("../data/santa.png");
