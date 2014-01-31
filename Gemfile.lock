@@ -86,3 +86,4 @@ DEPENDENCIES
   middleman (~> 3.2)
   puma (~> 2.7)
   rake (~> 10.1)
+  sass
