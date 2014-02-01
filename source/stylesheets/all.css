@@ -1,0 +1,34 @@
+html {
+  background: url("../data/santa.png");
+  background-image: url("../data/santa.png");
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #666666;
+  background-repeat: no-repeat; }
+
+.navbar {
+  width: auto;
+  height: 60px;
+  background-color: #555555; }
+  .navbar .nav-link {
+    text-decoration: none;
+    font-size: 26px;
+    padding-top: 12px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    color: #acbddf; }
+    .navbar .nav-link:hover, .navbar .nav-link .active {
+      background-color: #666666;
+      color: #3399cc; }
+  .navbar .name {
+    font-size: 26px;
+    color: #3E0814; }
+    .navbar .name:hover, .navbar .name .active {
+      color: #3E0814; }

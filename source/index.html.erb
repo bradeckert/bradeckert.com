@@ -1,71 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <title>Brad Eckert's Personal Website</title>
-  <link rel="stylesheet" href="stylesheets/normalize.css">
-  <link rel="stylesheet" href="stylesheets/all.css">
-  <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
-</head>
+<script type="text/x-handlebars">
+      <div class="navbar">
+        {{#link-to 'about'}}<div class="nav-link name">Brad Eckert</div>{{/link-to}}
+        {{#link-to 'about'}}<div class="nav-link">About</div>{{/link-to}}
+        {{#link-to 'projects'}}<div class="nav-link">Projects</div>{{/link-to}}
+        {{#link-to 'resume'}}<div class="nav-link">Resume</div>{{/link-to}}
+        {{#link-to 'contact'}}<div class="nav-link">Contact</div>{{/link-to}}
+      </div>
+  <div class='container'>
+    {{outlet}}
+  </div>
+</script>
 
-<body>
-  <script type="text/x-handlebars">
-        <div class="header">
-          <div class="nav-link">{{#link-to 'about'}}About{{/link-to}}</li>
-          <div class="nav-link">{{#link-to 'projects'}}Projects{{/link-to}}</li>
-          <div class="nav-link">{{#link-to 'resume'}}Resume{{/link-to}}</li>
-          <div class="nav-link">{{#link-to 'contact'}}Contact{{/link-to}}</li>
-        </div>
-    <div class='container'>
-      {{outlet}}
-    </div>
-  </script>
+<script type="text/x-handlebars" id="about">
+  <div class="about content-text">
+    <p>Welcome to my site!</p>
+    <p>I am a junior at MIT currently studying <a href="http://www.eecs.mit.edu/">computer science</a> with a concentration in economics. I am currently working on building my frontend development skills while working at Nest Labs in Palo Alto, California.</p>
+    <p>In my spare time (when MIT allows me that pleasure...) I like to ski, cook, enjoy the closest beer, and read or watch George R.R. Martin reduce his cast of characters.</p>
+    <p>This website will be a showcase of my skills, what projects I have worked on, and anything else I find amusing enough to share. Feel free to contact me to learn more!</p>
+  </div>
+</script>
 
-  <script type="text/x-handlebars" id="about">
-    <div class="about content-text">
-      <p>Welcome to my site!</p>
-      <p>I am a junior at MIT currently studying <a href="http://www.eecs.mit.edu/">computer science</a> with a concentration in economics. I am currently working on building my frontend development skills while working at Nest Labs in Palo Alto, California.</p>
-      <p>In my spare time (when MIT allows me that pleasure...) I like to ski, cook, enjoy the closest beer, and read or watch George R.R. Martin reduce his cast of characters.</p>
-      <p>This website will be a showcase of my skills, what projects I have worked on, and anything else I find amusing enough to share. Feel free to contact me to learn more!</p>
-    </div>
-  </script>
+<script type="text/x-handlebars" id="resume" class="resume">
+  <img src="data/resume.jpg" />
+</script>
 
-  <script type="text/x-handlebars" id="resume" class="resume">
-    <img src="data/resume.jpg" />
-  </script>
+<script type="text/x-handlebars" id="contact">
+  <address>
+    <strong>Brad Eckert</strong><br>
+    <a href="mailto:beckert@mit.edu?Subject=Personal%20Website" target="_top">beckert@mit.edu</a><br>
+    <abbr title="Phone">P:</abbr> (650) 575-9634
+  </address>
+</script>
 
-  <script type="text/x-handlebars" id="contact">
-    <address>
-      <strong>Brad Eckert</strong><br>
-      <a href="mailto:beckert@mit.edu?Subject=Personal%20Website" target="_top">beckert@mit.edu</a><br>
-      <abbr title="Phone">P:</abbr> (650) 575-9634
-    </address>
-
-  </script>
-  <!-- <div id="background-image">
-    <img src="data/santa.jpg"/>
-  </div> -->
-
-  <script src="javascripts/libs/jquery-1.10.2.js"></script>
-  <script src="javascripts/libs/handlebars-1.1.2.js"></script>
-  <script src="javascripts/libs/ember-1.2.0.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="javascripts/all.js"></script>
-  <!-- to activate the test runner, add the "?test" query string parameter -->
-  <script src="tests/runner.js"></script>
-
-  <!-- google analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-47173598-1', 'bradeckert.com');
-    ga('send', 'pageview');
-  </script>
-</body>
-</html>
+  
