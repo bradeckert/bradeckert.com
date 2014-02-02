@@ -1,11 +1,17 @@
 <script type="text/x-handlebars">
-      <div class="navbar">
-        {{#link-to 'about'}}<div class="nav-link name">Brad Eckert</div>{{/link-to}}
-        {{#link-to 'about'}}<div class="nav-link">About</div>{{/link-to}}
-        {{#link-to 'projects'}}<div class="nav-link">Projects</div>{{/link-to}}
-        {{#link-to 'resume'}}<div class="nav-link">Resume</div>{{/link-to}}
-        {{#link-to 'contact'}}<div class="nav-link">Contact</div>{{/link-to}}
-      </div>
+  <div class="navbar">
+    {{#link-to 'about'}}<div class="nav-link name">Brad Eckert</div>{{/link-to}}
+    {{#link-to 'about'}}<div class="nav-link">About</div>{{/link-to}}
+    {{#link-to 'projects'}}<div class="nav-link">Projects</div>{{/link-to}}
+    {{#link-to 'resume'}}<div class="nav-link">Resume</div>{{/link-to}}
+    {{#link-to 'contact'}}<div class="nav-link">Contact</div>{{/link-to}}
+    <ul class="pull-right">
+      <li><a href="https://twitter.com/ChefEckert"><i class="fa fa-twitter fa-2x social-icon"></i></a></li>
+      <li><a href="https://github.com/bradeckert"><i class="fa fa-github fa-2x social-icon"></i></a></li>
+      <li><a href="http://www.linkedin.com/pub/bradley-eckert/4b/46/778"><i class="fa fa-linkedin fa-2x social-icon"></i></a></li>
+      <li><a href="https://www.facebook.com/brad.eckert"><i class="fa fa-facebook fa-2x social-icon"></i></a></li>
+    </ul>
+  </div>
   <div class='container'>
     {{outlet}}
   </div>

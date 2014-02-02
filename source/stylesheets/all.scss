@@ -9,9 +9,6 @@ $nav_link_color: #ACBDDF;
 @mixin big_link {
 	text-decoration: none;
 	font-size: 26px;
-	&:hover {
-		
-	}
 }
 
 html {
@@ -26,6 +23,8 @@ html {
 	background-clip: initial;
 	background-color: $background_color;
 	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+
 }
 
 .navbar {
@@ -54,5 +53,14 @@ html {
 			color: #3E0814;
 		}
 	}
+
+	.pull-right {
+		position: right;
+		.li {
+			display: inline-block;
+		}
+	}
 }
+
+
 

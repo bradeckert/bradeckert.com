@@ -9,7 +9,8 @@ html {
   background-origin: initial;
   background-clip: initial;
   background-color: #666666;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased; }
 
 .navbar {
   width: auto;
@@ -32,3 +33,7 @@ html {
     color: #3E0814; }
     .navbar .name:hover, .navbar .name .active {
       color: #3E0814; }
+  .navbar .pull-right {
+    position: right; }
+    .navbar .pull-right .li {
+      display: inline-block; }
