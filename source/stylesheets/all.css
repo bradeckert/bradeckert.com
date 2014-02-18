@@ -12,28 +12,12 @@ html {
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased; }
 
-.navbar {
-  width: auto;
-  height: 60px;
-  background-color: #555555; }
-  .navbar .nav-link {
-    text-decoration: none;
-    font-size: 26px;
-    padding-top: 12px;
-    text-align: center;
-    display: inline-block;
-    width: 200px;
-    height: 60px;
-    color: #acbddf; }
-    .navbar .nav-link:hover, .navbar .nav-link .active {
-      background-color: #666666;
-      color: #3399cc; }
-  .navbar .name {
-    font-size: 26px;
-    color: #3E0814; }
-    .navbar .name:hover, .navbar .name .active {
-      color: #3E0814; }
-  .navbar .pull-right {
-    position: right; }
-    .navbar .pull-right .li {
-      display: inline-block; }
+.construction {
+  margin: 3% auto;
+  width: 700px;
+}
+
+.construction span {
+  font-size: 3em;
+  -webkit-font-smoothing: antialiased;
+}
