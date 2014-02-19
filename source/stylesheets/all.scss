@@ -11,11 +11,20 @@ $nav_link_color: #ACBDDF;
 	font-size: 26px;
 }
 
+@mixin body_text {
+	font-size: 1.5em;
+	color: #3E0814;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
 html {
   	background: url("../data/santa.png");
 	background-image: url("../data/santa.png");
 	background-position: left bottom;
-	background-size: contain;
+	background-size: fixed;
 	background-repeat-x: no-repeat;
 	background-repeat-y: no-repeat;
 	background-attachment: fixed;
@@ -34,12 +43,15 @@ html {
 
 	.nav-link {
 		@include big_link;
-		padding-top: 12px;
+		margin-top: 5px;
+		padding-top: 7px;
 		text-align: center;
 		display: inline-block;
 		width: $nav_link_width;
-		height: $nav_height;
+		height: 48px;
 		color: $nav_link_color;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
 		&:hover, .active{
 			background-color: $nav_link_background_highlight_color;
 			color: $nav_link_highlight_color;
@@ -51,13 +63,60 @@ html {
 		color: #3E0814;
 		&:hover, .active {
 			color: #3E0814;
+			background-color: $nav_background_color;
 		}
 	}
+}
+
+
+.about {
+	@include body_text;
+	position: relative;
+	width: 60%;
+	margin: 70px auto;
+}
+
+.resume {
+	position: relative;
+	margin: 0px auto;
+	width: 927px;
+
+	img {
+		height: 1200px;
+	}
+}
+
+.contact {
+	position: relative;
+	margin: 70px auto;
+	width: 60%;
+	text-align: center;
+	@include body_text;
+}
+
+
+.footer {
+	background-color: $nav_background_color;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-top-left-radius: 40px;
+	z-index: 1;
 
 	.pull-right {
-		position: right;
-		.li {
-			display: inline-block;
+		list-style-type: none;
+		margin-right: 1em;
+		-webkit-padding-start: 1em;
+		
+		li {
+			display: inline;
+			margin: 8px 6px;
+			a {
+				color: $nav_link_color;
+				&:visited {
+					color: $nav_link_color;
+				}
+			}
 		}
 	}
 }
